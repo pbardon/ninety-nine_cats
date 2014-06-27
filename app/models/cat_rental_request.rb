@@ -9,6 +9,7 @@
 #  status     :string(255)      default("PENDING"), not null
 #  created_at :datetime
 #  updated_at :datetime
+#  user_id    :integer          not null
 #
 
 class CatRentalRequest < ActiveRecord::Base
@@ -20,6 +21,8 @@ class CatRentalRequest < ActiveRecord::Base
   before_validation :set_status
   
   belongs_to :cat
+  belongs_to :user
+  
   
   def approve!
     ActiveRecord::Base.transaction do

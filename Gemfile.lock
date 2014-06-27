@@ -29,6 +29,7 @@ GEM
       activerecord (>= 2.3.0)
       rake (>= 0.8.7)
     arel (4.0.2)
+    bcrypt (3.1.7)
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -54,7 +55,7 @@ GEM
     erubis (2.7.0)
     execjs (2.2.0)
     hike (1.2.3)
-    i18n (0.6.9)
+    i18n (0.6.10)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
@@ -133,6 +134,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  bcrypt (~> 3.1.2)
   better_errors
   binding_of_caller
   coffee-rails (~> 4.0.0)
